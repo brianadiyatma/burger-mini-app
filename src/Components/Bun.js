@@ -1,9 +1,23 @@
-import React from 'react'
+import React from "react";
 
-const Bun = () => {
-  return (
-    <div>Bun</div>
-  )
-}
+import style from "./burger.module.css";
 
-export default Bun
+const Bun = (props) => {
+  let bunClass;
+
+  switch (props.type) {
+    case "top":
+      bunClass = style.bun_top;
+      break;
+    case "insert":
+      bunClass = style.bun_insert;
+      break;
+    default:
+      bunClass = style.bun_bottom;
+      break;
+  }
+
+  return <div className={`${style.bun} ${bunClass}`}></div>;
+};
+
+export default Bun;

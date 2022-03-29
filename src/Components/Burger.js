@@ -9,11 +9,13 @@ import Lettuce from "./Lettuce";
 const Burger = () => {
   return (
     <>
-      <Bun />
+      <Bun type="top" />
       <Patty />
-      <Tomato />
-      <Cheese />
       <Lettuce />
+      <Bun type="insert" />
+      <Cheese />
+      <Tomato />
+      <Bun />
     </>
   );
 };

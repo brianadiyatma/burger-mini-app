@@ -1,9 +1,7 @@
-import React from 'react'
-
+import React from "react";
+import style from "./burger.module.css";
 const Patty = () => {
-  return (
-    <div>Patty</div>
-  )
-}
+  return <div className={style.patty}></div>;
+};
 
-export default Patty
+export default Patty;
