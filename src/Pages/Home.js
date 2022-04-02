@@ -1,9 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
+import style from "./home.module.css";
 const Home = () => {
-  return (<div>Welcome to Burger Maker</div>
-  
+  return (
+    <div className={style.home_container}>
+      <h1>Welcome to Burger Maker</h1>
+    </div>
   );
 };
 
