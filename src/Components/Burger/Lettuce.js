@@ -1,7 +1,10 @@
-import React from "react";
-import style from "./burger.module.css";
-const Lettuce = () => {
-  return <div className={style.lettuce}></div>;
-};
+import React from 'react'
+import style from './burger.module.css'
 
-export default Lettuce;
+const Lettuce = () => {
+  return (
+    <div className={style.lettuce}></div>
+  )
+}
+
+export default Lettuce

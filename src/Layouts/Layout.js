@@ -1,14 +1,16 @@
-import React from "react";
-import MainContent from "./MainContent";
-import Navigation from "./Navigation";
+import React from 'react'
+import Navigation from './Navigation'
+import MainContent from './MainContent'
 
-const DefaultLayout = (props) => {
+const Layout = (props) => {
   return (
     <>
-      <Navigation />
-      <MainContent>{props.children}</MainContent>
+      <Navigation/>
+      <MainContent>
+        {props.children}
+      </MainContent>
     </>
-  );
-};
+  )
+}
 
-export default DefaultLayout;
+export default Layout

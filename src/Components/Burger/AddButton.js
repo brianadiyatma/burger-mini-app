@@ -1,12 +1,12 @@
-import React from "react";
-import styledComponents from "styled-components";
+import React from 'react'
+import style from './controller.module.css'
 
 const AddButton = (props) => {
   return (
-    <button className={styledComponents.add_buton} onClick={props.clickHandler}>
-      {props.label}
+    <button className={style.add_button} onClick={props.clickHandler}>
+        {props.label}
     </button>
-  );
-};
+  )
+}
 
-export default AddButton;
+export default AddButton
