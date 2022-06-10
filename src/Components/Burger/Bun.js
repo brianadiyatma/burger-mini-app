@@ -1,25 +1,18 @@
-import React from 'react'
-import style from './burger.module.css'
-import styled from 'styled-components'
-
-const StyledButton = styled.button`
-  background-color: white;
-  padding-left: 0px;
-`
+import React from "react";
+import style from "./burger.module.css";
 
 const Bun = (props) => {
-
   let bunClass;
 
   switch (props.type) {
-    case 'top':
+    case "top":
       bunClass = style.bun_top;
       break;
-    case 'insert':
+    case "insert":
       bunClass = style.bun_insert;
       break;
     default:
-      bunClass = '';
+      bunClass = "";
   }
 
   return (
@@ -39,7 +32,7 @@ const Bun = (props) => {
       </StyledButton> */}
       {/* </button> */}
     </div>
-  )
-}
+  );
+};
 
-export default Bun
+export default Bun;

@@ -1,11 +1,11 @@
 // Dependencies
-import React from 'react'
-import { Routes, Route, Link } from 'react-router-dom'
+import React from "react";
+import { Routes, Route } from "react-router-dom";
 
 // Components
-import Home from './Pages/Home'
-import BurgerMaker from './Pages/BurgerMaker';
-import Layout from './Layouts/Layout';
+import Home from "./Pages/Home";
+import BurgerMaker from "./Pages/BurgerMaker";
+import Layout from "./Layouts/Layout";
 
 function App() {
   return (
@@ -18,9 +18,11 @@ function App() {
       <Link to="/burger-maker"><p>Burger Maker</p></Link>
       */}
       <Layout>
-        <Routes>   {/* Hanya element didalam Routes yang ikut berubah mengikuti routing */}
-          <Route path="/" element={<Home/>}/>
-          <Route path="/burger-maker" element={<BurgerMaker/>}/>
+        <Routes>
+          {" "}
+          {/* Hanya element didalam Routes yang ikut berubah mengikuti routing */}
+          <Route path="/" element={<Home />} />
+          <Route path="/burger-maker" element={<BurgerMaker />} />
         </Routes>
       </Layout>
     </>
